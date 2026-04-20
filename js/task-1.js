@@ -1,5 +1,9 @@
 function isEnoughCapacity(products, containerSize) {
-
+    let total = 0;
+    for (let product in products) {
+        total += products[product];
+    }
+    return total <= containerSize;
 }
 
 console.log(
